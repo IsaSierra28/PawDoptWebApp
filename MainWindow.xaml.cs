@@ -6,7 +6,7 @@ namespace Pawdopt
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
     }
 }

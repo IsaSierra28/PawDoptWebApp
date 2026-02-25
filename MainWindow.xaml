@@ -2,125 +2,283 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Pawdopt"
-        Height="800" Width="1200"
+        Height="950"
+        Width="1200"
         Background="#F5F7F9">
 
     <Grid>
 
-        <!-- Navigation Bar -->
-        <DockPanel Height="70" Background="#DDEEF5" VerticalAlignment="Top">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Text="Adopt" Margin="20" FontSize="16"/>
-                <TextBlock Text="Rehome" Margin="20" FontSize="16"/>
-                <TextBlock Text="Care Guide" Margin="20" FontSize="16"/>
-                <TextBlock Text="About Us" Margin="20" FontSize="16"/>
-            </StackPanel>
+        <!-- PAGE STRUCTURE -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="220"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
 
-            <Button Content="Login / Register"
-                    Width="140"
-                    Height="35"
-                    HorizontalAlignment="Right"
-                    Margin="20"
-                    Background="#0F3E53"
-                    Foreground="White"
-                    DockPanel.Dock="Right"/>
-        </DockPanel>
-
-        <!-- Hero Section -->
-        <Grid Margin="0,100,0,0">
+        <!-- ================= HEADER ================= -->
+        <Grid Background="#EAF2F6" Grid.Row="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <!-- Left Text -->
-            <StackPanel Margin="60">
-                <TextBlock Text="Give a New Life to"
-                           FontSize="36"
-                           FontWeight="SemiBold"
-                           Foreground="#5A2A2A"/>
+            <Image Source="Images/logo.png"
+                   Height="45"
+                   Margin="20,10"
+                   VerticalAlignment="Center"/>
 
-                <TextBlock Text="Powdopt"
-                           FontSize="48"
-                           FontWeight="Bold"
-                           Foreground="#0F3E53"
-                           Margin="0,10,0,20"/>
-
-                <TextBlock TextWrapping="Wrap"
-                           FontSize="16"
-                           Width="400"
-                           Text="Pet adoption and rehoming are both vital aspects of animal welfare, offering hope and a fresh start to pets in need."/>
-
-                <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
-                    <Button Content="Adopt Now"
-                            Width="140"
-                            Height="45"
-                            Background="#0F3E53"
-                            Foreground="White"
-                            Margin="0,0,20,0"/>
-
-                    <Button Content="Rehome Now"
-                            Width="140"
-                            Height="45"
-                            BorderBrush="#0F3E53"
-                            BorderThickness="2"
-                            Background="White"
-                            Foreground="#0F3E53"/>
-                </StackPanel>
+            <StackPanel Grid.Column="1"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                <TextBlock Text="Adopt" Margin="25,0" FontSize="16" Foreground="#2B6C8A"/>
+                <TextBlock Text="Rehome" Margin="25,0" FontSize="16" Foreground="#2B6C8A"/>
+                <TextBlock Text="Care Guide" Margin="25,0" FontSize="16" Foreground="#2B6C8A"/>
+                <TextBlock Text="About Us" Margin="25,0" FontSize="16" Foreground="#2B6C8A"/>
             </StackPanel>
 
-            <!-- Right Image -->
-            <Image Grid.Column="1"
-                   Source="Images/pets.png"
-                   Stretch="Uniform"
-                   Margin="20"/>
+            <StackPanel Grid.Column="2"
+                        Orientation="Horizontal"
+                        VerticalAlignment="Center"
+                        Margin="0,0,20,0">
+                <Button Content="Login"
+                        Width="90"
+                        Height="35"
+                        Background="#0F3E53"
+                        Foreground="White"
+                        Margin="0,0,10,0"/>
+                <Button Content="Register"
+                        Width="90"
+                        Height="35"
+                        BorderBrush="#0F3E53"
+                        BorderThickness="2"
+                        Background="White"
+                        Foreground="#0F3E53"/>
+            </StackPanel>
         </Grid>
 
-        <!-- Pet Cards Section -->
-        <StackPanel VerticalAlignment="Bottom" Margin="0,0,0,50">
-            <TextBlock Text="Take a Look at Some of Our Pets"
-                       FontSize="28"
-                       HorizontalAlignment="Center"
-                       Margin="0,40"/>
+        <!-- BLUE STRIP -->
+        <Grid Grid.Row="1" Background="#6FA9C3"/>
 
-            <WrapPanel HorizontalAlignment="Center" Margin="20">
+        <!-- ================= MAIN CONTENT ================= -->
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
 
-                <!-- Example Pet Card -->
-                <Border Width="250"
-                        Height="350"
-                        Background="White"
-                        CornerRadius="10"
-                        Margin="15"
-                        Padding="15"
-                        BorderBrush="#E0E0E0"
-                        BorderThickness="1">
+                <!-- HERO -->
+                <Grid Margin="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
 
-                    <StackPanel>
-                        <Image Source="Images/dog1.jpg"
-                               Height="150"
-                               Stretch="Fill"/>
-
-                        <TextBlock Text="Pitter"
-                                   FontSize="18"
+                    <StackPanel Margin="40">
+                        <TextBlock Text="Give a New Life to"
+                                   FontSize="40"
+                                   Foreground="#5A2A2A"/>
+                        <TextBlock Text="Pawdopt"
+                                   FontSize="52"
                                    FontWeight="Bold"
-                                   Margin="0,10,0,5"/>
+                                   Foreground="#0F3E53"
+                                   Margin="0,10,0,20"/>
+                        <TextBlock Width="450"
+                                   TextWrapping="Wrap"
+                                   FontSize="16"
+                                   Text="Pet adoption and rehoming are both vital aspects of animal welfare, offering hope and a fresh start to pets in need. Open your heart and your home to a shelter pet."/>
 
-                        <TextBlock Text="Quebec, Canada"
-                                   FontSize="14"
-                                   Foreground="Gray"/>
+                        <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
+                            <Button Content="Adopt Now"
+                                    Width="150"
+                                    Height="45"
+                                    Background="#0F3E53"
+                                    Foreground="White"
+                                    Margin="0,0,20,0"/>
+                            <Button Content="Rehome Now"
+                                    Width="150"
+                                    Height="45"
+                                    BorderBrush="#0F3E53"
+                                    BorderThickness="2"
+                                    Background="White"
+                                    Foreground="#0F3E53"/>
+                        </StackPanel>
+                    </StackPanel>
 
-                        <TextBlock Text="Male • 5 Years • Large"
-                                   Margin="0,10,0,0"/>
+                    <Grid Grid.Column="1"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center">
 
-                        <Button Content="More Info"
-                                Margin="0,20,0,0"
+                        <Ellipse Width="450"
+                                 Height="450"
+                                 Fill="#CFE5ED"/>
+
+                        <Image Source="Images/pets.png"
+                               Width="500"
+                               Margin="0,60,-20,0"/>
+
+                        <Ellipse Width="35"
+                                 Height="35"
+                                 Fill="#7EB7CE"
+                                 HorizontalAlignment="Right"
+                                 VerticalAlignment="Top"
+                                 Margin="0,80,40,0"/>
+
+                        <Ellipse Width="20"
+                                 Height="20"
+                                 Fill="#7EB7CE"
+                                 HorizontalAlignment="Left"
+                                 VerticalAlignment="Bottom"
+                                 Margin="40,0,0,100"/>
+                    </Grid>
+                </Grid>
+
+                <!-- PET TITLE -->
+                <TextBlock Text="Take a Look at Some of Our Pets"
+                           FontSize="30"
+                           HorizontalAlignment="Center"
+                           Margin="0,40,0,30"
+                           FontWeight="SemiBold"/>
+
+                <!-- PET CARDS -->
+                <StackPanel HorizontalAlignment="Center">
+
+                    <WrapPanel HorizontalAlignment="Center">
+
+                        <!-- CARD 1 -->
+                        <Border Width="260" Height="370"
+                                Background="White"
+                                CornerRadius="12"
+                                Margin="15"
+                                Padding="15"
+                                BorderBrush="#E0E0E0"
+                                BorderThickness="1">
+                            <StackPanel>
+                                <Image Source="Images/dog1.jpg" Height="150"/>
+                                <TextBlock Text="Pitter" FontWeight="Bold" Margin="0,10,0,5"/>
+                                <TextBlock Text="Quebec, Canada" Foreground="Gray"/>
+                                <TextBlock Text="Male • 5 Years • Large" Margin="0,10,0,0"/>
+                                <Button Content="More Info"
+                                        Margin="0,20,0,0"
+                                        Background="#0F3E53"
+                                        Foreground="White"/>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- CARD 2 -->
+                        <Border Width="260" Height="370"
+                                Background="White"
+                                CornerRadius="12"
+                                Margin="15"
+                                Padding="15"
+                                BorderBrush="#E0E0E0"
+                                BorderThickness="1">
+                            <StackPanel>
+                                <Image Source="Images/cat1.jpg" Height="150"/>
+                                <TextBlock Text="Hero" FontWeight="Bold" Margin="0,10,0,5"/>
+                                <TextBlock Text="Alberta, Canada" Foreground="Gray"/>
+                                <TextBlock Text="Male • 2 Years • Small" Margin="0,10,0,0"/>
+                                <Button Content="More Info"
+                                        Margin="0,20,0,0"
+                                        Background="#0F3E53"
+                                        Foreground="White"/>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- CARD 3 -->
+                        <Border Width="260" Height="370"
+                                Background="White"
+                                CornerRadius="12"
+                                Margin="15"
+                                Padding="15"
+                                BorderBrush="#E0E0E0"
+                                BorderThickness="1">
+                            <StackPanel>
+                                <Image Source="Images/dog2.jpg" Height="150"/>
+                                <TextBlock Text="Magie" FontWeight="Bold" Margin="0,10,0,5"/>
+                                <TextBlock Text="Ontario, Canada" Foreground="Gray"/>
+                                <TextBlock Text="Female • 3 Years • Medium" Margin="0,10,0,0"/>
+                                <Button Content="More Info"
+                                        Margin="0,20,0,0"
+                                        Background="#0F3E53"
+                                        Foreground="White"/>
+                            </StackPanel>
+                        </Border>
+
+                    </WrapPanel>
+
+                    <Button Content="See More"
+                            Width="140"
+                            Height="40"
+                            Margin="0,25,0,50"
+                            Background="White"
+                            BorderBrush="#0F3E53"
+                            BorderThickness="2"
+                            Foreground="#0F3E53"/>
+                </StackPanel>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- ================= FOOTER ================= -->
+        <Grid Grid.Row="3" Background="#E9EFF2">
+            <Grid Margin="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel>
+                    <TextBlock Text="How Can We Help?" FontWeight="Bold"/>
+                    <TextBlock Text="Adopt a pet" Margin="0,10,0,0"/>
+                    <TextBlock Text="Rehome a pet"/>
+                    <TextBlock Text="Adopt FAQ's"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Contact Us" FontWeight="Bold"/>
+                    <TextBlock Text="123 Main Street"/>
+                    <TextBlock Text="+1 (514) 123-4567"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2">
+                    <TextBlock Text="Keep In Touch With Us" FontWeight="Bold"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBox Width="180"/>
+                        <Button Content="Subscribe"
                                 Background="#0F3E53"
                                 Foreground="White"/>
                     </StackPanel>
-                </Border>
+                </StackPanel>
+            </Grid>
+        </Grid>
 
-            </WrapPanel>
-        </StackPanel>
+        <!-- ================= FOOTER BOTTOM ================= -->
+        <Grid Grid.Row="4" Background="#0F3E53">
+            <Grid Margin="40,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="©2026 Pawdopt.com"
+                           Foreground="White"
+                           VerticalAlignment="Center"/>
+
+                <StackPanel Grid.Column="1"
+                            Orientation="Horizontal"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Right">
+                    <Image Source="Images/facebook.png"
+                           Width="22"
+                           Margin="10,0"/>
+                    <Image Source="Images/instagram.png"
+                           Width="22"
+                           Margin="10,0"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
 
     </Grid>
 </Window>

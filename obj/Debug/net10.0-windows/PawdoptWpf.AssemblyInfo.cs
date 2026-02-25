@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PawdoptWpf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75c744c151fc6416939da33a112d1d55bc810729")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d9e52f83aee6f2947e50e84058f2d5a8b79c8da")]
 [assembly: System.Reflection.AssemblyProductAttribute("PawdoptWpf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PawdoptWpf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

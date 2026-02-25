@@ -1,6 +1,11 @@
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\bin\Debug\net10.0-windows\PawdoptWpf.exe
-C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\bin\Debug\net10.0-windows\Images\dog1.jpg
+C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\bin\Debug\net10.0-windows\Images\logo.png
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\bin\Debug\net10.0-windows\Images\pets.png
+C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\bin\Debug\net10.0-windows\Images\dog1.jpg
+C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\bin\Debug\net10.0-windows\Images\cat1.jpg
+C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\bin\Debug\net10.0-windows\Images\dog2.jpg
+C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\bin\Debug\net10.0-windows\Images\facebook.png
+C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\bin\Debug\net10.0-windows\Images\instagram.png
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\bin\Debug\net10.0-windows\PawdoptWpf.deps.json
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\bin\Debug\net10.0-windows\PawdoptWpf.runtimeconfig.json
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\bin\Debug\net10.0-windows\PawdoptWpf.dll
@@ -15,9 +20,9 @@ C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\obj\Debug\net10.0-windows\PawdoptW
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\obj\Debug\net10.0-windows\PawdoptWpf.AssemblyInfoInputs.cache
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\obj\Debug\net10.0-windows\PawdoptWpf.AssemblyInfo.cs
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\obj\Debug\net10.0-windows\PawdoptWpf.csproj.CoreCompileInputs.cache
+C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\obj\Debug\net10.0-windows\PawdoptWpf.sourcelink.json
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\obj\Debug\net10.0-windows\PawdoptWpf.dll
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\obj\Debug\net10.0-windows\refint\PawdoptWpf.dll
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\obj\Debug\net10.0-windows\PawdoptWpf.pdb
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\obj\Debug\net10.0-windows\PawdoptWpf.genruntimeconfig.cache
 C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\obj\Debug\net10.0-windows\ref\PawdoptWpf.dll
-C:\Users\Edw1n\OneDrive\Escritorio\PawdoptWpf\obj\Debug\net10.0-windows\PawdoptWpf.sourcelink.json
